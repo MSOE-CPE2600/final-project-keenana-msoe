@@ -5,3 +5,12 @@
 *  Date: 12/10/2024
 *  Note: gcc -o backend backend.o thermostat.o
 ***********************************************/
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "struct.h"
+
+int main () {
+    
+    return 0;
+}
