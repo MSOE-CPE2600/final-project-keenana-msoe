@@ -11,6 +11,6 @@
 #include "struct.h"
 
 int main () {
-    
+    temps *temp;
     return 0;
 }
