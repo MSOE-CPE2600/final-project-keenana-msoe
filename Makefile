@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-c -Wall
-LDFLAGS= 
-LDFLAGSC= 
+LDFLAGS=-lpthread -lrt
+LDFLAGSC=
 EXECUTABLES=controller backend
 
 # Sources for each executable

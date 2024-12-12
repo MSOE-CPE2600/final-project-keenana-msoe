@@ -27,6 +27,10 @@ void *state_machine(void *args) {
                 // turn off
                 state = OFF;
                 data->new_temp = current_temp;
+            } else if (input_temp > current_temp) {
+                // go to heating
+                state = HEATING;
+                data->new_temp = current_temp;
             } else {
                 data->new_temp = current_temp - 1;
             }
@@ -37,10 +41,15 @@ void *state_machine(void *args) {
                 // turn off
                 state = OFF;
                 data->new_temp = current_temp;
+            } else if (input_temp < current_temp) {
+                // go to cooling
+                state = COOLING;
+                data->new_temp = current_temp;
             } else {
                 data->new_temp = current_temp + 1;
             }
             break;
     }
     data->current_state = state;
+    return 0;
 }

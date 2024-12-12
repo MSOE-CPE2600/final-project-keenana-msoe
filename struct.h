@@ -13,4 +13,5 @@ typedef struct {
     int input_temp;
     int current_temp;
     int current_state;
+    char prev_input[256];
 } temps;
