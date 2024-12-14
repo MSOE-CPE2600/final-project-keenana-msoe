@@ -107,6 +107,5 @@ int main () {
     unlink(PIPE_TO_BACKEND);
     unlink(PIPE_FROM_BACKEND);
     pthread_cancel(thread);
-
     return 0;
 }

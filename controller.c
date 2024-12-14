@@ -104,6 +104,5 @@ int main() {
     close(from_backend_fd);
     unlink(PIPE_TO_BACKEND);
     unlink(PIPE_FROM_BACKEND);
-    exit(1);
     return 0;
 }
